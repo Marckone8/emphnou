@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#090c20">
+  <meta name="description" content="Entdecke verfügbare App- und Spielangebote bei Empfohlen. Prämien und Teilnahmebedingungen sind vom jeweiligen Angebot abhängig.">
+  <title>Spiele & App-Angebote entdecken | Empfohlen</title>
+  <style>
+    :root { color-scheme: dark; --red:#ef2948; --red2:#c91935; --white:#f9f9ff; --muted:#abb2d0; --line:rgba(255,255,255,.12); }
+    * { box-sizing:border-box; }
+    html,body {margin:0; min-height:100%;}
+    body {font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; color:var(--white);
+      background:radial-gradient(ellipse at 50% 4%, rgba(232,35,72,.19), transparent 53%),
+      linear-gradient(160deg,#111635 0%,#090c20 58%,#070916 100%);}
+    main {min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;
+      gap:0;text-align:center;max-width:480px;margin:auto;padding:36px 22px 28px;}
+    .brand {display:inline-flex;align-items:center;gap:10px;font-size:20px;font-weight:850;letter-spacing:-.04em;margin-bottom:42px;}
+    .mark {width:30px;height:30px;border-radius:10px;background:linear-gradient(135deg,#ff566a,#ba0e2d);
+      display:grid;place-items:center;font-size:20px;box-shadow:0 9px 30px rgba(239,41,72,.22);}
+    .eyebrow {display:inline-flex;align-items:center;gap:7px;padding:7px 13px;border:1px solid rgba(239,41,72,.3);
+      border-radius:100px;color:#ffbec9;background:rgba(239,41,72,.10);font-size:12px;font-weight:750;letter-spacing:.02em;margin-bottom:20px;}
+    h1 {font-size:clamp(34px,9vw,52px);letter-spacing:-.058em;line-height:1.08;margin:0 0 14px;font-weight:900;}
+    h1 span {color:#ff6177;}
+    .lead {font-size:16px;line-height:1.55;max-width:355px;color:#c3c9df;margin:0 auto 29px;}
+    .game {display:flex;align-items:center;text-align:left;gap:14px;background:rgba(255,255,255,.045);
+      border:1px solid var(--line);border-radius:20px;padding:13px 15px;width:100%;max-width:385px;margin-bottom:22px;}
+    .game img {width:55px;height:55px;object-fit:cover;border-radius:14px;flex-shrink:0;}
+    .game strong {display:block;font-size:17px;letter-spacing:-.02em;margin-bottom:4px;}
+    .game p {margin:0;color:var(--muted);font-size:12px;line-height:1.45;}
+    .action {display:flex;align-items:center;justify-content:center;gap:13px;width:100%;max-width:385px;min-height:76px;
+      border-radius:21px;padding:17px 20px;background:linear-gradient(180deg,#ff415e,#d11d3b);
+      color:#fff;font-weight:850;font-size:20px;text-decoration:none;letter-spacing:-.025em;
+      box-shadow:0 17px 42px rgba(214,22,55,.35);transition:transform .15s ease,filter .15s ease;}
+    .action:hover {transform:translateY(-2px);filter:brightness(1.07);}
+    .action:active {transform:translateY(0);}
+    .action:focus-visible {outline:3px solid #fff;outline-offset:4px;}
+    .arrow {font-size:24px;line-height:1;}
+    .subaction {font-size:12px;line-height:1.5;color:#aeb5d0;margin:13px 0 0;max-width:340px;}
+    footer {margin-top:48px;text-align:center;max-width:390px;line-height:1.55;font-size:11px;color:#8189ac;}
+    footer strong {font-weight:700;color:#abb2d0;}
+    @media(max-height:710px) {main {justify-content:flex-start;padding-top:22px;}.brand {margin-bottom:23px;}footer {margin-top:28px;}}
+    @media(max-width:360px) {main {padding-inline:16px;}h1 {font-size:33px;}.lead {font-size:14px;}.action {font-size:18px;}}
+    @media(prefers-reduced-motion:reduce) {.action {transition:none;}}
+  </style>
+</head>
+<body>
+  <main>
+    <div class="brand"><span class="mark" aria-hidden="true">E</span><span>Empfohlen</span></div>
+    <div class="eyebrow">🎮 Apps & Spiele entdecken</div>
+    <h1>Spielen. Entdecken.<br><span>Prämien sichern.</span></h1>
+    <p class="lead">Entdecke App- und Spielangebote. Welche Prämien verfügbar sind, siehst du direkt beim Anbieter.</p>
+    <div class="game">
+      <img src="data:image/webp;base64,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" width="55" height="55" alt="Block Blast">
+      <div><strong>Block Blast</strong><p>Prüfe, ob es aktuell eine passende Spielaufgabe gibt.</p></div>
+    </div>
+    <a class="action" id="offerLink" href="https://taprkr.com/r/eyJ0IjoiZW1wZm9obGVuIiwidGlkIjoiYWU3Yzk0M2E5MGM1ZmM3M2E1NWUiLCJ0cyI6MTc5NDIyODc4NDA3M30" rel="noopener noreferrer">
+      Angebote ansehen <span class="arrow" aria-hidden="true">→</span>
+    </a>
+    <p class="subaction">Weiterleitung zu einem externen Angebot · Registrierung und Teilnahmebedingungen beim Anbieter</p>
+    <footer><strong>Werbung / Partnerlink</strong><br>Teilnahme ab 21 Jahren. Verfügbarkeit, Voraussetzungen und mögliche Prämien können je nach Angebot variieren. Keine garantierten Einnahmen. Diese Seite ist keine offizielle Block-Blast-Seite.</footer>
+  </main>
+  <script>
+    // Zugriffs- und Kampagnenparameter unverändert an das bestehende Angebotsziel weiterreichen.
+    (function () {
+      var qs = window.location.search;
+      if (!qs) return;
+      var link = document.getElementById('offerLink');
+      if (link) link.href += (link.href.indexOf('?') === -1 ? '?' : '&') + qs.slice(1);
+    })();
+  </script>
+</body>
+</html>
